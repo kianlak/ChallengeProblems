@@ -1,3 +1,5 @@
+import java_helper.GeneralHelper;
+
 import java.util.HashMap;
 
 class Solution3005 {
@@ -24,19 +26,23 @@ class Solution3005 {
     public static void main(String[] args) {
         Solution3005 sol = new Solution3005();
 
-        int[] nums1 = {1, 2, 2, 3, 1, 4, 2};
-        System.out.println("Input: [1, 2, 2, 3, 1, 4, 2] → Result: " + sol.maxFrequencyElements(nums1));
+        int[][] testCases = {
+            {1, 2, 2, 3, 1, 4, 2},     // normal
+            {5, 6, 7, 8},              // all unique
+            {9, 9, 9, 9},              // all same
+            {1, 2, 2, 3, 3},           // tie for max frequency
+            {},                        // empty
+            {1},                       // single element
+            {2, 2, 2, 3, 3, 4, 4},     // one dominant, others smaller
+            {10, 11, 10, 11},          // equal tie
+            {7, 7, 8, 8, 9, 9},        // multiple ties
+            {100, 200, 200, 300, 300, 300} // larger numbers
+        };
 
-        int[] nums2 = {5, 6, 7, 8};
-        System.out.println("Input: [5, 6, 7, 8] → Result: " + sol.maxFrequencyElements(nums2));
-
-        int[] nums3 = {9, 9, 9, 9};
-        System.out.println("Input: [9, 9, 9, 9] → Result: " + sol.maxFrequencyElements(nums3));
-
-        int[] nums4 = {1, 2, 2, 3, 3};
-        System.out.println("Input: [1, 2, 2, 3, 3] → Result: " + sol.maxFrequencyElements(nums4));
-
-        int[] nums5 = {};
-        System.out.println("Input: [] → Result: " + sol.maxFrequencyElements(nums5));
+        // Run each test case with helper printing
+        for (int[] testCase : testCases) {
+            int result = sol.maxFrequencyElements(testCase);
+            GeneralHelper.printResult(testCase, result);
+        }
     }
 }
