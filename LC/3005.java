@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution {
+class Solution3005 {
     public int maxFrequencyElements(int[] nums) {
         HashMap<Integer, Integer> frequency = new HashMap<>();
         int currMaxFrequency = 0;
@@ -22,7 +22,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        Solution3005 sol = new Solution3005();
 
         int[] nums1 = {1, 2, 2, 3, 1, 4, 2};
         System.out.println("Input: [1, 2, 2, 3, 1, 4, 2] → Result: " + sol.maxFrequencyElements(nums1));
