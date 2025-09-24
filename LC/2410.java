@@ -33,7 +33,7 @@ class Solution2410 {
   }
 
   public static void main(String[] args) {
-		Solution2410 sol = new Solution2410();
+    Solution2410 sol = new Solution2410();
 
     int[][] playersCases = {
       {4, 7, 9},              // Normal case                        → expected: 2
@@ -63,5 +63,5 @@ class Solution2410 {
       int result = sol.matchPlayersAndTrainers(playersCases[i], trainersCases[i]);
       GeneralHelper.printResult(playersCases[i], trainersCases[i], result);
     }
-	}
+  }
 }
