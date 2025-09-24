@@ -13,12 +13,10 @@ class Solution867 {
     return newMatrix;
   }
 
-	public static void main(String[] args) {
-		Solution867 sol = new Solution867();
+  public static void main(String[] args) {
+    Solution867 sol = new Solution867();
 		
     int[][][] testCases = {
-      // 
-
       /* square 3x3
        * expected: 
        * [[1,4,7],
@@ -93,11 +91,11 @@ class Solution867 {
         {1000000000,
         -1000000000}
       },
-		};
+    };
 
-		for (int[][] testCase : testCases) {
-			int[][] result = sol.transpose(testCase);
-			GeneralHelper.printResult(testCase, result);
-		}
-	}
+    for (int[][] testCase : testCases) {
+      int[][] result = sol.transpose(testCase);
+      GeneralHelper.printResult(testCase, result);
+    }
+  }
 }
