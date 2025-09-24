@@ -15,12 +15,13 @@ public class GeneralHelper {
 		System.out.println();
 	}
 
-	/* Input String[] 
+	/* Input int[], int[]
 	 * Result int
 	 */
-	public static void printResult(String[] strs, int result) {
+	public static void printResult(int[] nums1, int[]nums2, int result) {
 		System.out.println("Test Case #" + caseNum++);
-		System.out.println("Input : " + Arrays.toString(strs));
+		System.out.println("Input 1 : " + Arrays.toString(nums1));
+		System.out.println("Input 2 : " + Arrays.toString(nums2));
 		System.out.println("Result: " + result);
 		System.out.println();
 	}
@@ -42,5 +43,15 @@ public class GeneralHelper {
     }
 
     System.out.println();
+	}
+
+	/* Input String[] 
+	 * Result int
+	 */
+	public static void printResult(String[] strs, int result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + Arrays.toString(strs));
+		System.out.println("Result: " + result);
+		System.out.println();
 	}
 }
