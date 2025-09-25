@@ -25,9 +25,9 @@ class Solution3005 {
 		Solution3005 sol = new Solution3005();
 
 		int[][] testCases = {
-			{1, 2, 2, 3, 1, 4, 2},        // normal																		→ result=3
-			{5, 6, 7, 8},                 // all unique																→ result=4
-			{9, 9, 9, 9},                 // all same																	→ result=4
+			{1, 2, 2, 3, 1, 4, 2},        // normal                                   → result=3
+			{5, 6, 7, 8},                 // all unique                               → result=4
+			{9, 9, 9, 9},                 // all same                                 → result=4
 			{1, 2, 2, 3, 3},              // tie for max frequency										→ result=4
 			{1},                          // single element														→ result=1
 			{2, 2, 2, 3, 3, 4, 4},        // one dominant, others smaller							→ result=3
