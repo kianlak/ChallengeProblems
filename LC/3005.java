@@ -24,7 +24,7 @@ class Solution3005 {
   public static void main(String[] args) {
     Solution3005 sol = new Solution3005();
 
-		int[][] testCases = {
+    int[][] testCases = {
       {1, 2, 2, 3, 1, 4, 2},        // normal                                   → result=3
       {5, 6, 7, 8},                 // all unique                               → result=4
       {9, 9, 9, 9},                 // all same                                 → result=4
