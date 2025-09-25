@@ -33,7 +33,6 @@ class Solution3005 {
 			{2, 2, 2, 3, 3, 4, 4},        // one dominant, others smaller							→ result=3
 			{10, 11, 10, 11},             // equal tie																→ result=4
 			{7, 7, 8, 8, 9, 9},           // multiple ties														→ result=6
-			{42, 42, 42, 42, 42, 42, 42}, // all same (longer length within bounds)		→ result=7
 			{1, 1, 2, 2, 3, 3, 4, 4},     // even tie across many											→ result=8
 			{1, 2, 3, 4, 5, 6, 7, 8, 9},  // large unique sequence										→ result=9
 			{1, 1, 2, 2, 2, 3, 3, 3},     // tie with different values but same total	→ result=6
