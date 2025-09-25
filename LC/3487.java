@@ -37,7 +37,7 @@ class Solution3487 {
       {50, 60, 50, 70},     // within valid bounds      → sum=180
       {100, 100, 99, 98},   // upper bound values       → sum=297
       {-100, -50, -100},    // lower bound values       → max=-50
-      };
+    };
 
     for (int[] testCase : testCases) {
       int result = sol.maxSum(testCase);
