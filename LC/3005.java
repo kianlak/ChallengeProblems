@@ -40,7 +40,7 @@ class Solution3005 {
       {1, 1, 1, 2, 2, 2, 3, 3, 3},  // multiple equal groups                    → result=9
       {50, 60, 70, 50, 60, 50},     // sparse larger values within [1,100]      → result=3
       {100, 100, 100, 99, 99, 98},  // upper bound values                       → result=3
-		};
+    };
     
     for (int[] testCase : testCases) {
       int result = sol.maxFrequencyElements(testCase);
