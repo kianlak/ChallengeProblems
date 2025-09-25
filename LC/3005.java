@@ -11,9 +11,7 @@ class Solution3005 {
 		for (int num : nums) {
 			frequency.put(num, frequency.getOrDefault(num, 0) + 1);
 
-			if (currMaxFrequency < frequency.get(num)) {
-				currMaxFrequency = frequency.get(num);
-			}
+			if (currMaxFrequency < frequency.get(num)) currMaxFrequency = frequency.get(num);
 		}
 
 		for(Integer value : frequency.values()) {
