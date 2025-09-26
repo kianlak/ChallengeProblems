@@ -45,7 +45,7 @@ class Solution2410 {
       {8, 8, 8, 8},           // All equal values                   → expected: 4
       {1},                    // Smallest input size                → expected: 1
       {1000000000, 999999999} // Near max values                    → expected: 2
-  };
+    };
   
     int[][] trainersCases = {
       {8, 2, 5, 8},           // Normal case                        → expected: 2
