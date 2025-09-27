@@ -5,14 +5,22 @@ import java.util.Arrays;
 public class GeneralHelper {
 	private static int caseNum = 1;
 
+	/* Input int 
+	 * Result int
+	 */
+	public static void printResult(int num, int result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + num);
+		System.out.println("Result: " + result + "\n");
+	}
+
 	/* Input int[] 
 	 * Result int
 	 */
 	public static void printResult(int[] nums, int result) {
 		System.out.println("Test Case #" + caseNum++);
 		System.out.println("Input : " + Arrays.toString(nums));
-		System.out.println("Result: " + result);
-		System.out.println();
+		System.out.println("Result: " + result + "\n");
 	}
 
 	/* Input int[], int[]
@@ -22,8 +30,7 @@ public class GeneralHelper {
 		System.out.println("Test Case #" + caseNum++);
 		System.out.println("Input 1 : " + Arrays.toString(nums1));
 		System.out.println("Input 2 : " + Arrays.toString(nums2));
-		System.out.println("Result: " + result);
-		System.out.println();
+		System.out.println("Result: " + result + "\n");
 	}
 
 	/* Input int[][] 
@@ -42,7 +49,7 @@ public class GeneralHelper {
 			System.out.println(Arrays.toString(row));
     }
 
-    System.out.println();
+    System.out.println("\n");
 	}
 
 	/* Input String[] 
@@ -51,7 +58,6 @@ public class GeneralHelper {
 	public static void printResult(String[] strs, int result) {
 		System.out.println("Test Case #" + caseNum++);
 		System.out.println("Input : " + Arrays.toString(strs));
-		System.out.println("Result: " + result);
-		System.out.println();
+		System.out.println("Result: " + result + "\n");
 	}
 }
