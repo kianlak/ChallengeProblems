@@ -52,6 +52,15 @@ public class GeneralHelper {
     System.out.println("\n");
 	}
 
+	/* Input String
+	 * Result boolean
+	 */
+	public static void printResult(String str, boolean result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + str);
+		System.out.println("Result: " + result + "\n");
+	}
+
 	/* Input String[] 
 	 * Result int
 	 */
