@@ -28,7 +28,7 @@ class Solution2520 {
       135,      // all divide 135               → expected: 3
       999,      // all digits 9, divide 999     → expected: 3
       12345,    // only 1,3,5 divide            → expected: 3
-      987654321 // large near upper bound       → expected: 2
+      987654321 // large near upper bound       → expected: 3
     };
 
     for (int testCase : testCases) {

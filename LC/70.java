@@ -19,7 +19,7 @@ class Solution70 {
     Solution70 sol = new Solution70();
 
     int[] testCases = {
-      0,   // edge case: no steps (1 way)                  → expected: 1
+      0,   // edge case: no steps (1 way)                 → expected: 1
       1,   // single step                                 → expected: 1
       2,   // two ways: (1+1), (2)                        → expected: 2
       3,   // three ways: (1+1+1), (1+2), (2+1)           → expected: 3
