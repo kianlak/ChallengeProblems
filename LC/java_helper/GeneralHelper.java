@@ -1,6 +1,7 @@
 package java_helper;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class GeneralHelper {
 	private static int caseNum = 1;
@@ -68,5 +69,48 @@ public class GeneralHelper {
 		System.out.println("Test Case #" + caseNum++);
 		System.out.println("Input : " + Arrays.toString(strs));
 		System.out.println("Result: " + result + "\n");
+	}
+
+
+	/* SPECIAL CASE PRINTING FORMATTING */
+
+	/* Input int 
+	 * Result List<List<Integer>>
+	 */
+	public static void printResultSpecialCasePyramid(int num, List<List<Integer>> result) {
+		System.out.println("Test Case #" + caseNum++);
+    System.out.println("Input : " + num);
+    System.out.println("Result (Pascal’s Triangle):");
+
+    if (result == null || result.isEmpty()) {
+			System.out.println("  [empty]\n");
+			return;
+    }
+
+    int maxAbs = 0;
+    for (List<Integer> row : result) {
+			for (int v : row) maxAbs = Math.max(maxAbs, Math.abs(v));
+    }
+    int digitWidth = Math.max(1, String.valueOf(maxAbs).length());
+    int spaceBetween = 1;
+
+    int lastCols = result.get(result.size() - 1).size();
+    int totalWidthLast = lastCols * digitWidth + (lastCols - 1) * spaceBetween;
+
+    for (List<Integer> row : result) {
+			int cols = row.size();
+			int rowWidth = cols * digitWidth + (cols - 1) * spaceBetween;
+			int padding = Math.max(0, (totalWidthLast - rowWidth) / 2);
+
+			StringBuilder sb = new StringBuilder();
+			for (int i = 0; i < padding; i++) sb.append(' ');
+
+			for (int i = 0; i < cols; i++) {
+				if (i > 0) sb.append(' ');
+				sb.append(String.format("%" + digitWidth + "d", row.get(i)));
+			}
+
+			System.out.println(sb.toString());
+    }
 	}
 }
