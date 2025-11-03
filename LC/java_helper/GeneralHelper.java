@@ -15,6 +15,15 @@ public class GeneralHelper {
 		System.out.println("Result: " + result + "\n");
 	}
 
+	/* Input int 
+	 * Result List<Integer>
+	 */
+	public static void printResult(int num, List<Integer> result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + num);
+		System.out.println("Result: " + result + "\n");
+	}
+
 	/* Input int[] 
 	 * Result int
 	 */
