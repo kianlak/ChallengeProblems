@@ -14,6 +14,15 @@ public class GeneralHelper {
 		System.out.println("Result: " + result + "\n");
 	}
 
+	/* Input int[]
+	 * Result boolean
+	 */
+	public static void printResult(int[] num, boolean result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + Arrays.toString(num));
+		System.out.println("Result: " + result + "\n");
+	}
+
 	/* Input int[] 
 	 * Result int
 	 */
@@ -58,6 +67,16 @@ public class GeneralHelper {
 	public static void printResult(String str, boolean result) {
 		System.out.println("Test Case #" + caseNum++);
 		System.out.println("Input : " + str);
+		System.out.println("Result: " + result + "\n");
+	}
+	
+	/* Input String, String
+	* Result boolean
+	*/
+	public static void printResult(String str1, String str2, boolean result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input 1 : " + str1);
+		System.out.println("Input 2 : " + str2);
 		System.out.println("Result: " + result + "\n");
 	}
 
