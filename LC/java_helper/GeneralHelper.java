@@ -42,6 +42,16 @@ public class GeneralHelper {
 		System.out.println("Result: " + result + "\n");
 	}
 
+	/* Input int[], int
+	 * Result int[]
+	 */
+	public static void printResult(int[] nums, int num, int[] result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input 1 : " + Arrays.toString(nums));
+		System.out.println("Input 2 : " + num);
+		System.out.println("Result: " + Arrays.toString(result) + "\n");
+	}
+
 	/* Input int[], int[]
 	 * Result int
 	 */
@@ -99,6 +109,20 @@ public class GeneralHelper {
 		System.out.println("Result: " + result + "\n");
 	}
 
+	/* Input String[] 
+	 * Result List<List<String>>
+	 */
+	public static void printResult(String[] strs, List<List<String>> result) {
+		System.out.println("Test Case #" + caseNum++);
+		System.out.println("Input : " + Arrays.toString(strs));
+		System.out.print("Result: ");
+		
+		for (List<String> row : result) {
+			System.out.print("  " + row);
+    }
+		
+		System.out.println("\n");
+	}
 
 	/* SPECIAL CASE PRINTING FORMATTING */
 
