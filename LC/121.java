@@ -4,9 +4,9 @@ class Solution121 {
   public int maxProfit(int[] prices) {
     int maxPrice = 0, minPrice = Integer.MAX_VALUE;
     
-    for (int i = 0; i < prices.length; i++) {
-      if (prices[i] < minPrice) minPrice = prices[i];
-      else if (prices[i] > minPrice) maxPrice = Math.max(prices[i] - minPrice, maxPrice);
+    for (int index = 0; index < prices.length; index++) {
+      if (prices[index] < minPrice) minPrice = prices[index];
+      else if (prices[index] > minPrice) maxPrice = Math.max(prices[index] - minPrice, maxPrice);
     }
 
     return maxPrice;
