@@ -5,8 +5,8 @@ class Solution121 {
     int maxPrice = 0, minPrice = Integer.MAX_VALUE;
     
     for (int index = 0; index < prices.length; index++) {
-      if (prices[index] < minPrice) minPrice = prices[index];
-      else if (prices[index] > minPrice) maxPrice = Math.max(prices[index] - minPrice, maxPrice);
+      if (prices[index] > minPrice) maxPrice = Math.max(prices[index] - minPrice, maxPrice);
+      else if (prices[index] < minPrice) minPrice = prices[index];
     }
 
     return maxPrice;
@@ -26,7 +26,7 @@ class Solution121 {
       {2, 1, 2, 1, 2},               // multiple valleys and peaks          → expected: 1
       {9, 7, 2, 10, 1, 5, 6},        // multiple buy low / sell high points → expected: 8
       {100, 180, 260, 310, 40, 535}, // large rise then huge dip then spike → expected: 495
-      {3, 8, 8, 55, 38, 1, 7, 42},   // classic value swing                 → expected: 41
+      {3, 8, 8, 55, 38, 1, 7, 42},   // classic value swing                 → expected: 52
     };
 
     for (int[] testCase : testCases) {
