@@ -3,6 +3,8 @@ package java_helper;
 import java.util.Arrays;
 import java.util.List;
 
+import data_structure.ListNode;
+
 public class GeneralHelper {
 	private static int caseNum = 1;
 
@@ -121,6 +123,16 @@ public class GeneralHelper {
 			System.out.print("  " + row);
     }
 		
+		System.out.println("\n");
+	}
+
+	/* Input ListNode 
+	 * Result ListNode
+	 */
+	public static void printResult(ListNode list, ListNode result) {
+		System.out.println("Test Case #" + caseNum++);
+    System.out.println("Input : " + ListNode.toString(list));
+    System.out.println("Result: " + ListNode.toString(result));
 		System.out.println("\n");
 	}
 

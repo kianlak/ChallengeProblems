@@ -44,7 +44,6 @@ class Solution125 {
       "1231",                             // numeric non-palindrome                     → expected: false
     };
 
-
     for (String testCase : testCases) {
       boolean result = sol.isPalindrome(testCase);
 
