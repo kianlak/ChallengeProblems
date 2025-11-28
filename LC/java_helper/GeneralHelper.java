@@ -177,4 +177,13 @@ public class GeneralHelper {
 			System.out.println(sb.toString());
     }
 	}
+
+	public static void printResultSpecialCaseLogsMinStack(List<String> results) {
+		System.out.println("========= Test Case #" + caseNum++ + " =========");
+		for (String result : results) {
+			System.out.println(result);
+		}
+
+		System.out.println();
+	}
 }
