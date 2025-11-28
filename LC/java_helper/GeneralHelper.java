@@ -44,6 +44,15 @@ public class GeneralHelper {
 		System.out.println("Result: " + result + "\n");
 	}
 
+	/* Input int[]
+	 * Result int[]
+	 */
+		public static void printResult(int[] num, int[] result) {
+			System.out.println("Test Case #" + caseNum++);
+			System.out.println("Input : " + Arrays.toString(num));
+			System.out.println("Result: " + Arrays.toString(result) + "\n");
+		}
+
 	/* Input int[], int
 	 * Result int[]
 	 */
