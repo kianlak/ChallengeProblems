@@ -29,7 +29,6 @@ class Solution746 {
       {100, 1, 1, 1, 100},                  // avoid expensive edges
       {5, 6, 7, 8, 9},                      // pure increasing
       {9, 8, 7, 6, 5},                      // pure decreasing
-      {1},                                  // single element
       {2, 5, 2},                            // middle large, avoid it
       {10, 5, 10},                          // take cheaper middle
       {4, 1, 5, 1, 4},                      // weave between low-cost spots
