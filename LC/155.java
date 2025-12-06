@@ -141,7 +141,7 @@ class Solution155 {
         }
       }
 
-      GeneralHelper.printResultSpecialCaseLogsMinStack(output);
+      GeneralHelper.printResultSpecialCaseLogsStackClass(output);
     }
   }
 }

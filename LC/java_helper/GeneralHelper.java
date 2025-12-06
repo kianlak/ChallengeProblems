@@ -187,7 +187,7 @@ public class GeneralHelper {
     }
 	}
 
-	public static void printResultSpecialCaseLogsMinStack(List<String> results) {
+	public static void printResultSpecialCaseLogsStackClass(List<String> results) {
 		System.out.println("========= Test Case #" + caseNum++ + " =========");
 		for (String result : results) {
 			System.out.println(result);
