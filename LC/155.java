@@ -40,65 +40,37 @@ class Solution155 {
     Solution155 sol = new Solution155();
 
     Object[][] testCases = {
-      /*
-       * basic example 
-       * expected: 
-       * [null,null,null,null,-3,null,0,-2]
-       */
+      // basic example
       {
         new String[]{"MinStack","push","push","push","getMin","pop","top","getMin"},
         new Object[]{null,-2,0,-3,null,null,null,null}
       },
-      /*
-       * pushing smaller then larger 
-       * expected: 
-       * [null,null,null,3,null,3,null,3]
-       */
+      //pushing smaller then larger
       {
         new String[]{"MinStack","push","push","getMin","push","getMin","pop","getMin"},
         new Object[]{null,5,3,null,7,null,null,null}
       },
-      /*
-       * duplicates removed after pops 
-       * expected: 
-       * [null,null,null,null,null,null,2]
-       */
+      //duplicates removed after pops
       {
         new String[]{"MinStack","push","push","push","pop","pop","getMin"},
         new Object[]{null,2,2,2,null,null,null}
       },
-      /*
-       * negative decreasing sequence
-       * expected: 
-       * [null,null,null,null,null,-7,null,-5]
-       */
+      //negative decreasing sequence
       {
         new String[]{"MinStack","push","push","push","push","getMin","pop","getMin"},
         new Object[]{null,-1,-3,-5,-7,null,null,null}
       },
-      /*
-       * top returns last inserted   
-       * expected: 
-       * [null,null,null,10,8]
-       */
+      //top returns last inserted
       {
         new String[]{"MinStack","push","push","top","getMin"},
         new Object[]{null,8,10,null,null}
       },
-      /*
-       * correct min after pop    
-       * expected: 
-       * [null,null,null,null,4]
-       */
+      //correct min after pop
       {
         new String[]{"MinStack","push","push","pop","getMin"},
         new Object[]{null,4,1,null,null}
       },
-      /*
-       * pushing stack state maintained         
-       * expected: 
-       * [null,null,null,null,null, 50]
-       */
+      //pushing stack state maintained         
       {
         new String[]{"MinStack","push","push","push","pop","top"},
         new Object[]{null,100,50,75,null,null}

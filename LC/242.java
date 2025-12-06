@@ -17,23 +17,21 @@ class Solution242 {
     Solution242 sol = new Solution242();
 
     String[][] testCases = {
-      {"a", "a"},                               // single char, same                → expected: true
-      {"a", "b"},                               // single char, different           → expected: false
-      {"anagram", "nagaram"},                   // classic anagram                  → expected: true
-      {"rat", "car"},                           // different letters                → expected: false
-      {"listen", "silent"},                     // common example                   → expected: true
-      {"triangle", "integral"},                 // longer valid anagram             → expected: true
-      {"abcd", "dcbae"},                        // different lengths                → expected: false
-      {"hello", "bello"},                       // same length, one letter differs  → expected: false
-      {"xxyyzz", "zzxxyy"},                     // repeated characters              → expected: true
-      {"aaabbbccc", "cbacbacba"},               // mixed order                      → expected: true
-      {"abcdefghijklmnopqrstuvwxyz", 
-      "zyxwvutsrqponmlkjihgfedcba"},            // full alphabet reversed           → expected: true
-      {"abcabcabc", "cbacbacba"},               // same frequency, same length      → expected: true
-      {"abcabcabc", "abcabcab"},                // one char missing                 → expected: false
-      {"aaaaaaaaaa", "aaaaaaaaab"},             // almost identical except last     → expected: false
-      {"aaaaabbbbbcccccdddddeeeeefffff", 
-      "fffdddeeeebbbcccaaaffffbbdddee"},        // large-ish, valid anagram         → expected: true
+      {"a", "a"},                                                           // single char, same
+      {"a", "b"},                                                           // single char, different
+      {"anagram", "nagaram"},                                               // classic anagram
+      {"rat", "car"},                                                       // different letters
+      {"listen", "silent"},                                                 // common example
+      {"triangle", "integral"},                                             // longer valid anagram
+      {"abcd", "dcbae"},                                                    // different lengths
+      {"hello", "bello"},                                                   // same length, one letter differs
+      {"xxyyzz", "zzxxyy"},                                                 // repeated characters
+      {"aaabbbccc", "cbacbacba"},                                           // mixed order
+      {"abcdefghijklmnopqrstuvwxyz", "zyxwvutsrqponmlkjihgfedcba"},         // full alphabet reversed
+      {"abcabcabc", "cbacbacba"},                                           // same frequency, same length
+      {"abcabcabc", "abcabcab"},                                            // one char missing 
+      {"aaaaaaaaaa", "aaaaaaaaab"},                                         // almost identical except last
+      {"aaaaabbbbbcccccdddddeeeeefffff", "fffdddeeeebbbcccaaaffffbbdddee"}, // large-ish, valid anagram
     };
     
     for (String[] testCase : testCases) {

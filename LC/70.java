@@ -19,15 +19,15 @@ class Solution70 {
     Solution70 sol = new Solution70();
 
     int[] testCases = {
-      0,   // edge case: no steps (1 way)                 → expected: 1
-      1,   // single step                                 → expected: 1
-      2,   // two ways: (1+1), (2)                        → expected: 2
-      3,   // three ways: (1+1+1), (1+2), (2+1)           → expected: 3
-      4,   // five ways (Fibonacci pattern continues)     → expected: 5
-      5,   // eight ways                                  → expected: 8
-      10,  // medium input, check iteration correctness   → expected: 89
-      20,  // larger input, performance validation        → expected: 10946
-      45   // upper bound constraint                      → expected: 1836311903
+      0,   // edge case: no steps (1 way)
+      1,   // single step
+      2,   // two ways: (1+1), (2)
+      3,   // three ways: (1+1+1), (1+2), (2+1)
+      4,   // five ways (Fibonacci pattern continues)
+      5,   // eight ways
+      10,  // medium input, check iteration correctness
+      20,  // larger input, performance validation 
+      45   // upper bound constraint
     };
 
     for (int testCase : testCases) {

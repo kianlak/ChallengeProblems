@@ -22,16 +22,16 @@ class Solution167 {
     Solution167 sol = new Solution167();
 
     Object[][] testCases = {
-      { new int[]{2, 7, 11, 15}, 9 },             // classic example            → expected: [1, 2]
-      { new int[]{2, 3, 4}, 6 },                  // simple sorted small case   → expected: [1, 3]
-      { new int[]{-3, -1, 0, 2, 4, 5}, 1 },       // includes negatives         → expected: [2, 4]
-      { new int[]{1, 3, 4, 5, 7, 10, 11}, 9 },    // mid array result           → expected: [3, 5]
-      { new int[]{1, 2}, 3 },                     // smallest array size        → expected: [1, 2]
-      { new int[]{5, 25, 75}, 100 },              // large jump between numbers → expected: [2, 3]
-      { new int[]{1, 2, 3, 4, 4, 9, 56, 90}, 8 }, // two 4’s used               → expected: [4, 5]
-      { new int[]{-10, -5, -2, 0, 3, 8, 12}, 7 }, // mix of negatives/positives → expected: [3, 7]
-      { new int[]{1, 1, 3, 5}, 2 },               // duplicates at start        → expected: [1, 2]
-      { new int[]{1, 2, 3, 4, 5, 6}, 11 },        // near end                   → expected: [5, 6]
+      { new int[]{2, 7, 11, 15}, 9 },             // classic example
+      { new int[]{2, 3, 4}, 6 },                  // simple sorted small case
+      { new int[]{-3, -1, 0, 2, 4, 5}, 1 },       // includes negatives
+      { new int[]{1, 3, 4, 5, 7, 10, 11}, 9 },    // mid array result
+      { new int[]{1, 2}, 3 },                     // smallest array size
+      { new int[]{5, 25, 75}, 100 },              // large jump between numbers
+      { new int[]{1, 2, 3, 4, 4, 9, 56, 90}, 8 }, // two 4’s used
+      { new int[]{-10, -5, -2, 0, 3, 8, 12}, 7 }, // mix of negatives/positives
+      { new int[]{1, 1, 3, 5}, 2 },               // duplicates at start
+      { new int[]{1, 2, 3, 4, 5, 6}, 11 },        // near end
     };
 
     for (Object[] testCase : testCases) {

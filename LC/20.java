@@ -37,21 +37,21 @@ class Solution20 {
     Solution20 sol = new Solution20();
 
 		String[] testCases = {
-			"()",                 // simple valid 						→ expected: true
-			"()[]{}",             // multiple types 					→ expected: true
-			"(]",                 // mismatch type 						→ expected: false
-			"([)]",               // incorrect nesting 				→ expected: false
-			"{[]}",               // correct nesting 					→ expected: true
-			"((((()))))",         // deep nesting 						→ expected: true
-			"(((",                // missing closing brackets → expected: false
-			")))",                // closing without opening 	→ expected: false
-			"[",                  // single unclosed bracket 	→ expected: false
-			"]",                  // single unmatched close 	→ expected: false
-			"",                   // empty string 						→ expected: true
-			"{[()()]}",           // complex valid 						→ expected: true
-			"{[()()]]",           // extra closing bracket 		→ expected: false
-			"([]{})",             // valid mixture 						→ expected: true
-			"([{}]))",            // trailing mismatch 				→ expected: false
+			"()",                 // simple valid
+			"()[]{}",             // multiple types
+			"(]",                 // mismatch type
+			"([)]",               // incorrect nesting
+			"{[]}",               // correct nesting
+			"((((()))))",         // deep nesting
+			"(((",                // missing closing brackets
+			")))",                // closing without opening
+			"[",                  // single unclosed bracket
+			"]",                  // single unmatched close
+			"",                   // empty string
+			"{[()()]}",           // complex valid
+			"{[()()]]",           // extra closing bracket
+			"([]{})",             // valid mixture
+			"([{}]))",            // trailing mismatch
 		};
 
 		for (String testCase : testCases) {

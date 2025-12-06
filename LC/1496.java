@@ -38,26 +38,26 @@ class Solution1496 {
     Solution1496 sol = new Solution1496();
 
     String[] testCases = {
-      "NES",                 // Simple path, no crossing                → expected: false
-      "NESWW",               // Crosses origin again                    → expected: true
-      "N",                   // Single move                             → expected: false
-      "NS",                  // Back to origin                          → expected: true
-      "NSEW",                // Returns to origin after loop            → expected: true
-      "NNNN",                // Only goes north                         → expected: false
-      "NENW",                // Small square, returns to start          → expected: true
-      "NNSS",                // Moves up and back down along same line  → expected: true
-      "NEESSW",              // Ends at new point, no crossing          → expected: false
-      "NWNES",               // Crosses at midpoint                     → expected: true
-      "EEEEE",               // Long straight east path, no cross       → expected: false
-      "NESWNESW",            // Multiple loops, crosses multiple times  → expected: true
-      "NSSENNWWS",           // Complex path, returns to origin         → expected: true
-      "NNNNSSSSEEEEWWWW",    // Full box, crosses edges                 → expected: true
-      "ENWS",                // Smallest loop (1 of each direction)     → expected: true
-      "EEEEEEEEEE",          // Long path, no crossing (performance)    → expected: false,
-      "NSEWNSEWNSEW",        // Repeated loops                          → expected: true
-      "EWSN",                // Crosses origin at the end               → expected: true,
-      "NWNWNWNWNW",          // Zig-zag, never revisits                 → expected: false,
-      "NSEWSENW",            // Random mixed path                       → expected: true
+      "NES",                 // Simple path, no crossing
+      "NESWW",               // Crosses origin again
+      "N",                   // Single move
+      "NS",                  // Back to origin
+      "NSEW",                // Returns to origin after loop
+      "NNNN",                // Only goes north
+      "NENW",                // Small square, returns to start 
+      "NNSS",                // Moves up and back down along same line
+      "NEESSW",              // Ends at new point, no crossing
+      "NWNES",               // Crosses at midpoint 
+      "EEEEE",               // Long straight east path, no cross
+      "NESWNESW",            // Multiple loops, crosses multiple times 
+      "NSSENNWWS",           // Complex path, returns to origin
+      "NNNNSSSSEEEEWWWW",    // Full box, crosses edges
+      "ENWS",                // Smallest loop (1 of each direction)
+      "EEEEEEEEEE",          // Long path, no crossing (performance)
+      "NSEWNSEWNSEW",        // Repeated loops    
+      "EWSN",                // Crosses origin at the end
+      "NWNWNWNWNW",          // Zig-zag, never revisits 
+      "NSEWSENW",            // Random mixed path 
     };
 
     for (String path : testCases) {

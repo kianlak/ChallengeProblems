@@ -17,76 +17,42 @@ class Solution867 {
     Solution867 sol = new Solution867();
 		
     int[][][] testCases = {
-      /* square 3x3
-       * expected: 
-       * [[1,4,7],
-       *  [2,5,8],
-       *  [3,6,9]]
-       */
+      // square 3x3
 			{
         {1,2,3},
         {4,5,6},
         {7,8,9}
       },
-      /* rectangular 2x3 
-       * expected: 
-       * [[1,4],
-       *  [2,5],
-       *  [3,6]]
-       */
+      // rectangular 2x3
       {
         {1,2,3},
         {4,5,6}
       },
-      /* rectangular 3x2
-       * expected: 
-       * [[1,3,5],
-       *  [2,4,6]]
-      */            
+      // rectangular 3x2           
       {
         {1,2},
         {3,4},
         {5,6}
       },
-      /* 1x1
-       * expected: [[42]]
-       */
+      // 1x1
       {{42}},
-      /* single row (1x4)
-       * expected: 
-       * [[1],
-       *  [2],
-       *  [3],
-       *  [4]]
-       */
+      // single row (1x4)
       {
         {1,2,3,4}
       },
-      /* single column (4x1) 
-       * expected: 
-       * [[1,2,3,4]]
-      */
+      // single column (4x1)
       {
         {1},
         {2},
         {3},
         {4}
       },
-      /*
-       * negatives
-       * expected: 
-       * [[-1,-3],
-       *  [-2,-4]]
-       */
+      // negatives
       {
         {-1,-2},
         {-3,-4}
       },
-      /* large values (within bounds)
-       * expected: 
-       * [[1000000000],
-       *  [-1000000000]]
-       */
+      // large values (within bounds)
       {
         {1000000000,
         -1000000000}

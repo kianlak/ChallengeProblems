@@ -51,102 +51,61 @@ class Solution1381 {
     Solution1381 sol = new Solution1381();
 
     Object[][] testCases = {
-
-      /*
-      * Basic push/pop sequence  
-      * expected:
-      * [null, null, null, 2, 1]
-      */
+      // Basic push/pop sequence
       {
         new String[]{"CustomStack","push","push","pop","pop"},
         new Object[]{3, 1, 2, null, null}
       },
 
-      /*
-      * Push beyond maxSize (should ignore extra pushes)
-      * expected:
-      * [null, null, null, null, 2, 1]
-      */
+      // Push beyond maxSize (should ignore extra pushes)
       {
         new String[]{"CustomStack","push","push","push","push","pop","pop"},
         new Object[]{2, 1, 2, 3, 4, null, null}
       },
 
-      /*
-      * Increment k within bounds
-      * expected:
-      * [null, null, null, null, 6, 5]
-      */
+      // Increment k within bounds
       {
         new String[]{"CustomStack","push","push","increment","pop","pop"},
         new Object[]{2, 3, 4, new int[]{2, 3}, null, null}
       },
 
-      /*
-      * Increment k larger than stack size (should clamp)
-      * expected:
-      * [null, null, null, null, 8, 7]
-      */
+      // Increment k larger than stack size (should clamp)
       {
         new String[]{"CustomStack","push","push","increment","pop","pop"},
         new Object[]{2, 5, 6, new int[]{5, 3}, null, null}
       },
 
-      /*
-      * Multiple increments before any pops  
-      * expected:
-      * [null, null, null, null, null, 16, 12, 5]
-      */
+      // Multiple increments before any pops
       {
         new String[]{"CustomStack","push","push","push","increment","increment","pop","pop","pop"},
         new Object[]{3, 5, 10, 15, new int[]{3, 1}, new int[]{2, 5}, null, null, null}
       },
 
-      /*
-      * Pop from empty stack (should return -1)
-      * expected:
-      * [null, -1, null, 7]
-      */
+      // Pop from empty stack (should return -1)
       {
         new String[]{"CustomStack","pop","push","pop"},
         new Object[]{1, null, 7, null}
       },
 
-      /*
-      * Increment after some pops  
-      * expected:
-      * [null, null, null, null, 11, 6]
-      */
+      // Increment after some pops
       {
         new String[]{"CustomStack","push","push","push","pop","increment","pop","pop"},
         new Object[]{3, 5, 1, 2, null, new int[]{2,5}, null, null}
       },
 
-      /*
-      * Edge case: maxSize = 0 (stack cannot hold anything)
-      * expected:
-      * [null, null, -1]
-      */
+      // Edge case: maxSize = 0 (stack cannot hold anything)
       {
         new String[]{"CustomStack","push","pop"},
         new Object[]{0, 10, null}
       },
 
-      /*
-      * Large increment parameter but small stack
-      * expected:
-      * [null, null, null, 105, 104]
-      */
+      // Large increment parameter but small stack
       {
         new String[]{"CustomStack","push","push","increment","pop","pop"},
         new Object[]{2, 100, 101, new int[]{1000,4}, null, null}
       },
 
-      /*
-      * Complex alternating operations
-      * expected:
-      * [null, null, null, null, 20, 14, null, 9]
-      */
+      // Complex alternating operations
       {
         new String[]{"CustomStack","push","push","push","increment","pop","increment","pop"},
         new Object[]{3, 5, 7, 9, new int[]{3,2}, null, new int[]{1,5}, null}

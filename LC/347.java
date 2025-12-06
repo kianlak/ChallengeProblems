@@ -36,16 +36,16 @@ class Solution347 {
     Solution347 sol = new Solution347();
 
     Object[][] testCases = {
-      { new int[]{1}, 1 },                                    // single element             → expected: [1]
-      { new int[]{1, 1, 1, 2, 2, 3}, 2 },                     // classic LC example         → expected: [1, 2]
-      { new int[]{4, 4, 4, 4, 4}, 1 },                        // all same                   → expected: [4]
-      { new int[]{1, 2, 3, 4}, 2 },                           // all unique                 → expected: any 2 of [1,2,3,4] (all freq=1)
-      { new int[]{5, 5, 6, 6, 6}, 1 },                        // one element more frequent  → expected: [6]
-      { new int[]{7, 7, 8, 8, 9, 9}, 3 },                     // all values tied            → expected: [7,8,9] (any order)
-      { new int[]{10, 10, 10, 11, 11, 12}, 2 },               // two most frequent          → expected: [10, 11]
-      { new int[]{-1, -1, -1, -2, -2, -3}, 2 },               // negatives                  → expected: [-1, -2]
-      { new int[]{1000000000, 1000000000, -1000000000}, 1 },  // extreme boundary values    → expected: [1000000000]
-      { new int[]{3, 3, 4, 4, 4, 5, 5}, 2 }                   // one clear dominant + tie   → expected: [4, 3] or [4, 5]
+      { new int[]{1}, 1 },                                    // single element
+      { new int[]{1, 1, 1, 2, 2, 3}, 2 },                     // classic LC example
+      { new int[]{4, 4, 4, 4, 4}, 1 },                        // all same
+      { new int[]{1, 2, 3, 4}, 2 },                           // all unique
+      { new int[]{5, 5, 6, 6, 6}, 1 },                        // one element more frequent
+      { new int[]{7, 7, 8, 8, 9, 9}, 3 },                     // all values tied
+      { new int[]{10, 10, 10, 11, 11, 12}, 2 },               // two most frequent
+      { new int[]{-1, -1, -1, -2, -2, -3}, 2 },               // negatives
+      { new int[]{1000000000, 1000000000, -1000000000}, 1 },  // extreme boundary values
+      { new int[]{3, 3, 4, 4, 4, 5, 5}, 2 }                   // one clear dominant + tie
     };
 
 

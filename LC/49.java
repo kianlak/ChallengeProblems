@@ -37,16 +37,16 @@ class Solution49 {
     Solution49 sol = new Solution49();
 
     String[][] testCases = {
-      new String[]{"eat", "tea", "tan", "ate", "nat", "bat"},         // classic example                          → expected: [["eat","tea","ate"], ["tan","nat"], ["bat"]]
-      new String[]{"abc", "bca", "cab", "xyz", "zyx"},                // multiple groups                          → expected: [["abc","bca","cab"], ["xyz","zyx"]]
-      new String[]{"a"},                                              // single element                           → expected: [["a"]]
-      new String[]{"", ""},                                           // empty strings are anagrams               → expected: [["",""]]
-      new String[]{"aa", "bb", "ab", "ba", "bba"},                    // mixed lengths                            → expected: [["aa"], ["bb"], ["ab","ba"], ["bba"]]
-      new String[]{"listen", "silent", "enlist", "google", "gooegl"}, // two clear groups                         → expected: [["listen","silent","enlist"], ["google","gooegl"]]
-      new String[]{"rat", "tar", "art", "star", "tars", "cheese"},    // 3-word anagram + 2-word anagram + single → expected: [["rat","tar","art"], ["star","tars"], ["cheese"]]
-      new String[]{"dddd", "dd", "d", "dddd", "dd"},                  // duplicates and different lengths         → expected: [["dddd","dddd"], ["dd","dd"], ["d"]]
-      new String[]{"noon", "onon", "nono", "abc", "cab"},             // 3-word group + 2-word group              → expected: [["noon","onon","nono"], ["abc","cab"]]
-      new String[]{"qwe", "ewq", "weq", "zzz", "zz", "z"}             // 3-word group + uniques                   → expected: [["qwe","ewq","weq"], ["zzz"], ["zz"], ["z"]]
+      new String[]{"eat", "tea", "tan", "ate", "nat", "bat"},         // classic example
+      new String[]{"abc", "bca", "cab", "xyz", "zyx"},                // multiple groups
+      new String[]{"a"},                                              // single element
+      new String[]{"", ""},                                           // empty strings are anagrams
+      new String[]{"aa", "bb", "ab", "ba", "bba"},                    // mixed lengths
+      new String[]{"listen", "silent", "enlist", "google", "gooegl"}, // two clear groups
+      new String[]{"rat", "tar", "art", "star", "tars", "cheese"},    // 3-word anagram + 2-word anagram + single
+      new String[]{"dddd", "dd", "d", "dddd", "dd"},                  // duplicates and different lengths
+      new String[]{"noon", "onon", "nono", "abc", "cab"},             // 3-word group + 2-word group
+      new String[]{"qwe", "ewq", "weq", "zzz", "zz", "z"}             // 3-word group + uniques
     };
 
 

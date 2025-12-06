@@ -21,16 +21,16 @@ class Solution206 {
     Solution206 sol = new Solution206();
 
     int[][] testCases = {
-      {1, 2, 3, 4, 5},      // standard increasing list           → expected: [5, 4, 3, 2, 1]
-      {1},                  // single element list                → expected: [1]
-      {},                   // empty list                         → expected: []
-      {2, 1},               // simple two-element reverse         → expected: [1, 2]
-      {1, 1, 1},            // all duplicates                     → expected: [1, 1, 1]
-      {-1, -2, -3},         // negative values                    → expected: [-3, -2, -1]
-      {10, -5, 0, 10},      // mixed values with duplicates       → expected: [10, 0, -5, 10]
-      {100},                // another single-value case          → expected: [100]
-      {9, 8, 7, 6},         // decreasing list                    → expected: [6, 7, 8, 9]
-      {0, 0, 1, 0},         // zeros with one non-zero            → expected: [0, 1, 0, 0]
+      {1, 2, 3, 4, 5},      // standard increasing list
+      {1},                  // single element list
+      {},                   // empty list
+      {2, 1},               // simple two-element reverse
+      {1, 1, 1},            // all duplicates
+      {-1, -2, -3},         // negative values
+      {10, -5, 0, 10},      // mixed values with duplicates
+      {100},                // another single-value case
+      {9, 8, 7, 6},         // decreasing list
+      {0, 0, 1, 0},         // zeros with one non-zero
     };
 
     for (int[] testCaseArr : testCases) {
