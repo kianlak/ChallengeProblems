@@ -113,7 +113,7 @@ class Solution155 {
         }
       }
 
-      GeneralHelper.printResultSpecialCaseLogsStackClass(output);
+      GeneralHelper.printResultSpecialCaseLogsOperationOnClasses(output);
     }
   }
 }
